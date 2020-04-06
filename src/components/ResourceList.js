@@ -10,9 +10,10 @@ const ResourceList = ({ resource }) => {
         setResources(response.data)
     }
 
-    useEffect(() => {
+    useEffect(
+        () => {
         fetchResource(resource)
-    }, [])
+    }, [resource])
 
     return(
         <div>
